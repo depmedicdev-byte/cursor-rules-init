@@ -1,5 +1,7 @@
 # cursor-rules-init
 
+[![npm](https://img.shields.io/npm/v/cursor-rules-init.svg)](https://www.npmjs.com/package/cursor-rules-init) [![ci](https://github.com/depmedicdev-byte/cursor-rules-init/actions/workflows/test.yml/badge.svg)](https://github.com/depmedicdev-byte/cursor-rules-init/actions/workflows/test.yml) [![license](https://img.shields.io/npm/l/cursor-rules-init.svg)](./LICENSE)
+
 Scaffold an opinionated `.cursorrules` starter for Cursor, Claude, ChatGPT,
 or any chat-based AI coding tool. Free, MIT, no signup, no telemetry.
 
