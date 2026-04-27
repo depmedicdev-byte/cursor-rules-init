@@ -1,0 +1,44 @@
+{
+  "name": "cursor-rules-init",
+  "version": "0.1.0",
+  "description": "Scaffold opinionated .cursorrules starters for Cursor, Claude, ChatGPT, and any chat-based AI coding tool. Stack-aware, token-efficient, senior-dev defaults.",
+  "keywords": [
+    "cursor",
+    "cursorrules",
+    "ai",
+    "claude",
+    "chatgpt",
+    "codegen",
+    "prompt-engineering",
+    "scaffold",
+    "cli"
+  ],
+  "bin": {
+    "cursor-rules-init": "bin/cli.js"
+  },
+  "main": "src/index.js",
+  "type": "commonjs",
+  "files": [
+    "bin",
+    "src",
+    "templates",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "author": "depmedic <depmedic.dev@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/depmedicdev-byte/cursor-rules-init.git"
+  },
+  "homepage": "https://github.com/depmedicdev-byte/cursor-rules-init#readme",
+  "bugs": {
+    "url": "https://github.com/depmedicdev-byte/cursor-rules-init/issues"
+  }
+}

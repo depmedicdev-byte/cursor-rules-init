@@ -1,0 +1,13 @@
+# Python overlay
+# Use with base rules.
+
+- Python 3.11+. Use type hints on all public functions.
+- Prefer `dataclass` or `pydantic` over plain dicts for structured data.
+- Errors are subclasses of `Exception`, never strings or bare `Exception` raises.
+- No mutable default arguments (`def f(x=[])`). Use `None` and assign inside.
+- f-strings for formatting. Never `%` or `.format()`.
+- Imports: stdlib, third-party, local - separated by blank lines, sorted within group.
+- Tests use pytest. One assertion per test. Fixtures over setUp/tearDown.
+- Async: use `asyncio` for IO-bound. Never wrap CPU-bound work in async without explanation.
+- pyproject.toml only. No `setup.py` unless legacy support required.
+- Lock dependencies: `uv` or `pip-tools`. Never floating versions in production.

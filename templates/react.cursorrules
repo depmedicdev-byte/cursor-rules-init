@@ -1,0 +1,13 @@
+# React overlay
+# Use with the base + typescript rules.
+
+- React 18+. Function components only. No class components.
+- Hooks at the top of the component body. No conditional hook calls.
+- State that does not need to render belongs in `useRef`, not `useState`.
+- Effects: only when external systems are involved. Prefer derived state.
+- Memoize only with measured render cost. Do not wrap every callback in `useCallback`.
+- Props are minimal. Pass primitives, not config objects, when possible.
+- No `any` props. Define explicit prop types.
+- Forms use uncontrolled inputs unless validation requires otherwise.
+- Server Components: no event handlers, no `useState`. Client Components only when interactive.
+- Tailwind class lists: keep them short; extract to a `cn()` helper or sub-component when over ~6 classes.

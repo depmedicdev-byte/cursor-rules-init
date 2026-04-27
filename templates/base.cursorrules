@@ -1,0 +1,25 @@
+# Base senior-dev rules
+# Apply to all files. Override in stack-specific overlays below.
+
+- Output only what was asked. No greetings, summaries, sign-offs, or hedging.
+- Do not restate the prompt back to me.
+- No emojis unless I ask for them. No em-dashes.
+- Prefer the smallest diff that solves the problem. Do not refactor code I did not ask to change.
+- If you spot a nearby issue, name it; do not edit it.
+- Pick one approach and ship it. Do not enumerate three options unless I asked for trade-offs.
+- Comments explain non-obvious intent only. No redundant narration ("// loop the array").
+- Errors are nouns, not strings: NotFoundError, ConflictError, AuthRequiredError.
+- Never catch and discard. Always rethrow with context, or never catch.
+- Never log auth headers, tokens, cookies, or PII.
+- All SQL is parameterized. Never string-concatenate user input into queries.
+- Default to sequential. Add Promise.all only when measured > 100ms saved.
+- When asked to debug, do not propose a fix on hypothesis #1 with no reproduction.
+  1. State the steps to reproduce in isolation.
+  2. State one hypothesis and its predicted observation.
+  3. Test with the smallest experiment.
+  4. Only then propose a fix.
+- When asked for a code review, output in this order, skipping empty categories:
+  1. Bugs (will not work)
+  2. Risks (works today, fragile)
+  3. Style (subjective)
+- Power-user mode: if I prefix a message with "::", respond with code only, no prose.

@@ -1,0 +1,13 @@
+# Node.js server overlay
+# Use with base + typescript rules.
+
+- Node 20+. Express 4 or Fastify. No deprecated middleware.
+- Async handlers wrapped to forward errors (no unhandled rejections).
+- Validate every request body with zod or similar at the route boundary.
+- Never trust headers from the client for identity. Use signed sessions or JWT verified server-side.
+- All external HTTP through a single `httpClient` with timeout (5s default), retry policy, and request id propagation.
+- Database access through a single repository module per resource. No queries in route handlers.
+- Migrations are append-only. Never edit a committed migration.
+- Logs are structured (JSON). Include `request_id`, `user_id`, `route`. Never log secrets.
+- Health check at `/healthz` returns 200 only when DB ping succeeds.
+- Graceful shutdown: drain in-flight requests on SIGTERM before exit.

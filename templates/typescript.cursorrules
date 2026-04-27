@@ -1,0 +1,12 @@
+# TypeScript overlay
+# Use with the base rules.
+
+- TypeScript 5.x, Node 20+. No CommonJS. No `any` unless I introduced it.
+- Prefer `import type` for types. Prefer `unknown` over `any` in catches.
+- Public functions have explicit return types. Local helpers can infer.
+- No non-null assertions (`!`) on values that could realistically be undefined.
+- No barrel files (`index.ts` re-exports) unless explicitly asked.
+- Tests use vitest. One assertion per test. Test names: "<thing>: <case>".
+- Lint with eslint, format with prettier (single quotes, no semicolons in
+  JS files, semicolons required in TS files - match repo config).
+- ESM imports use explicit `.js` extensions when targeting Node directly.

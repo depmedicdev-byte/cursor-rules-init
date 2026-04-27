@@ -1,0 +1,12 @@
+# Next.js (App Router) overlay
+# Use with base + typescript + react rules.
+
+- App Router only. No `pages/` directory.
+- Server Components by default. Mark with `'use client'` only when needed.
+- Data fetching in Server Components or Server Actions. No `getServerSideProps`.
+- `Suspense` boundaries close to the data, not at the top of the route.
+- Loading and error UI: use `loading.tsx` and `error.tsx`, not in-component spinners.
+- Caching: explicit `cache: 'no-store'` or `revalidate: N` per fetch. Never rely on defaults.
+- Route handlers in `app/api/.../route.ts` - export named methods (`GET`, `POST`).
+- Metadata: export `metadata` from each page; do not use `<Head>` from `next/head`.
+- No global state libraries (zustand, jotai) unless multi-route persistence is required.
