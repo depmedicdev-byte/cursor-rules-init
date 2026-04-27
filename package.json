@@ -1,6 +1,6 @@
 {
   "name": "cursor-rules-init",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Scaffold opinionated .cursorrules starters for Cursor, Claude, ChatGPT, and any chat-based AI coding tool. Stack-aware, token-efficient, senior-dev defaults.",
   "keywords": [
     "cursor",

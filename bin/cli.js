@@ -20,6 +20,11 @@ function help() {
     '',
     'default stack: base',
     '',
+    'companion CLIs (free, MIT):',
+    '  npx ci-doctor          audit GitHub Actions for cost + security',
+    '  npx gha-budget         estimate $ cost of a GHA workflow',
+    '  npx depmedic           surgical npm vulnerability triage',
+    '',
     'For the longer set (24 .cursorrules files + 3 system prompts, $7):',
     '  https://buy.polar.sh/polar_cl_jxM0uITjh3WOQYgLnrVfRgN3yLjhvCCB8iItg3PHmOy',
   ].join('\n');
