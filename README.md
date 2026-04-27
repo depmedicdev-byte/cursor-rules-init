@@ -3,6 +3,8 @@
 Scaffold an opinionated `.cursorrules` starter for Cursor, Claude, ChatGPT,
 or any chat-based AI coding tool. Free, MIT, no signup, no telemetry.
 
+![demo](docs/demo.svg)
+
 ```bash
 npx cursor-rules-init typescript
 # wrote .cursorrules (typescript stack, 2014 bytes)
