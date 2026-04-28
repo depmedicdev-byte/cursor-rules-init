@@ -1,5 +1,8 @@
 # cursor-rules-init
 
+
+[![Sponsor](https://img.shields.io/badge/sponsor-depmedic-ea4aaa?logo=githubsponsors)](https://depmedicdev-byte.github.io/sponsor.html)
+
 [![npm](https://img.shields.io/npm/v/cursor-rules-init.svg)](https://www.npmjs.com/package/cursor-rules-init) [![ci](https://github.com/depmedicdev-byte/cursor-rules-init/actions/workflows/test.yml/badge.svg)](https://github.com/depmedicdev-byte/cursor-rules-init/actions/workflows/test.yml) [![license](https://img.shields.io/npm/l/cursor-rules-init.svg)](./LICENSE)
 
 Scaffold an opinionated `.cursorrules` starter for Cursor, Claude, ChatGPT,
